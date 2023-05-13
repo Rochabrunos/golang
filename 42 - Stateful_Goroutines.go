@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"math/rand"
 	"sync/atomic"
-	// "time"
 )
 
 /*
@@ -62,7 +61,6 @@ func main() {
 				//wait until the request is completed
 				<- read.resp
 				atomic.AddUint64(&readOps, 1)
-				// time.Sleep(time.Millisecond)
 			}
 		}()
 	}
@@ -81,7 +79,6 @@ func main() {
 				//wait for answer
 				<- write.resp
 				atomic.AddUint64(&writeOps, 1)
-				// time.Sleep(time.Millisecond)
 			}
 		}()
 	}
