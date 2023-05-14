@@ -3,3 +3,6 @@
 
 # ignove vscode configurations
 *.vscode
+
+#ignore
+*.txt
