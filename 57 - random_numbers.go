@@ -5,7 +5,10 @@ import (
 	"math/rand"
 	"time"
 )
-
+/*
+Note that this is not safe to use for random numbers you intend to be secret;
+use crypto/rand for those.
+*/
 func main() {
 	//returns a random int n, 0 <= n <= 100
 	fmt.Print(rand.Intn(100), ",")
